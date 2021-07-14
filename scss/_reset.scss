@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  @include responsive(1280px) {
+    font-size: 55%
+  }
+}
+
+/* CUSTOM SCROLLBAR */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 1rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5F3CA1;
+    border-radius: 1rem;
+  }
